@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Police Position Simulator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>Police Position Simulator</header>
+
+  <div id="login-card" class="card">
+    <h2>Login</h2>
+    <input type="text" id="userId" placeholder="รหัสนักศึกษา (68001-68350)">
+    <input type="text" id="password" placeholder="Password (001-350)">
+    <button id="loginBtn">Login</button>
+    <p id="loginError" class="error"></p>
+  </div>
+
+  <div id="simulator" class="card hidden">
+    <h2>เลือกตำแหน่ง</h2>
+    <p id="currentUser"></p>
+    <div id="positions"></div>
+    <h3>ผลการเลือก</h3>
+    <ul id="results"></ul>
+    <h3>ตารางตำแหน่งทั้งหมด</h3>
+    <div id="positionsTable" class="positions-table"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
